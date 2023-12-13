@@ -248,6 +248,40 @@ body{
 .box--1 {
     grid-area: box-1;
     background-color: red;
+    display: grid;
+    grid-template-areas: "header header"
+                         "header-p header-p"
+                         "name repository-name"
+                         "public public"
+                         "public-p public-p"
+                         "Private Private"
+                         "Private-p Private-p"
+                         "repository-btn";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+
+    .header{
+        grid-area: header;
+    } 
+    .header-p{
+        grid-area: header-p;
+    }
+    .name{
+        grid-area: name;
+    }
+    .repository-name{
+        grid-area: repository-name;
+    }
+    .public{
+        grid-area: public;
+    }
+    .public-p{
+        grid-area: public-p;
+    }
+    .Private{
+        grid-area: ;
+    }
+
 }
 
 .box--2 {
