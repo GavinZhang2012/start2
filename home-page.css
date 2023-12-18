@@ -249,7 +249,7 @@ body{
     grid-area: box-1;
     background-color: red;
     display: grid;
-    grid-template-areas: "header header"
+    grid-template-areas: "header-start header-start"
                          "header-p header-p"
                          "name repository-name"
                          "public public"
@@ -260,8 +260,12 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
 
-    .header{
-        grid-area: header;
+
+    .header-start{
+        grid-area: header-start;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     } 
     .header-p{
         grid-area: header-p;
@@ -279,7 +283,13 @@ body{
         grid-area: public-p;
     }
     .Private{
-        grid-area: ;
+        grid-area: Private;
+    }
+    .Private-p{
+        grid-area: Private-p;
+    }
+    .repository-btn{
+        grid-area: repository-btn;
     }
 
 }
