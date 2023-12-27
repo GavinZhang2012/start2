@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Cormorant, serif;
+}
+
+
+.header--items{
+    display: inline-block;
+    font-size: 50px;
+
+    .header--a{
+        font-size: 30px;
+        margin: 0px 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .a--work{
+        font-size: 30px;
+        color: black;
+        border-bottom: 2px solid black;
+    }
+}
+
+.header-h1{
+    margin-right: 250px;
+    margin-block: 30px;
+    margin-left: 30px;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+
+.body-container{
+    display: grid;
+    grid-template-areas:"img1 img2"
+                        "img3 img4"
+                        "img5 img6"
+                        "img7 img8"
+                        "about-container about2-container";
+
+    grid-template-columns: 700px 700px;
+
+    .img img{
+        height: 430px;
+        width: 630px;
+        border: solid 5px;
+        margin: 5px 0px 0px 30px;
+    }
+    .img div{
+        font-size: 1.5em;   /*h2's size is 1.5em*/
+        text-decoration: none;
+        margin: 0px 0px 20px 30px;
+    }
+
+    .img{
+        font-weight: 400;
+
+        .img--name{
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+            padding-right: 150px;
+        }
+        .img--stars{
+            display: inline-block;
+            color: red;
+            text-decoration: none;
+        }
+        
+        .img--box1{
+            grid-area: img1;
+            border: solid black 3px;
+        }
+        .img--box2{
+            grid-area: img2;
+            border: solid black 3px;
+        }
+        .img--box3{
+            grid-area: img3;
+            border: solid black 3px;
+        }
+        .img--box4{
+            grid-area: img4;
+            border: solid black 3px;
+        }
+        .img--box5{
+            grid-area: img5;
+            border: solid black 3px;
+        }
+        .img--box6{
+            grid-area: img6;
+            border: solid black 3px;
+        }
+        .img--box7{
+            grid-area: img7;
+            border: solid black 3px;
+        }
+        .img--box8{
+            grid-area: img8;
+            border: solid black 3px;
+        }
+    }
+
+
+    .about-card{
+        display: flex;
+        justify-content: center;
+        width: 1400px;
+
+        .about--container{
+            grid-area: about-container;
+            display: grid;
+            grid-template-areas:"tell-p tell-things"
+                                "card-number tell-things"
+                                "card-number tell-things"
+                                "made-by tell-things"
+                                "about-container about2-container";
+        
+            background-color: black;
+            color: yellow;
+            border: solid 5px;
+            width: 575px;
+            height: 350px;
+            grid-template-columns: 45% 52%;
+            grid-template-rows: 1fr 1fr 2fr 2fr;
+        
+            .tell-p{
+                font-size: 35px;
+                padding: 20px 10px 0px 15px;
+                grid-area: tell-p;
+                border-bottom: solid 2px;
+                width: 400px;
+                height: 70px; 
+            }
+        
+            .made-by{
+                margin-top: 20px;
+                grid-area: made-by;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-left: 15px;
+                height: 20px;
+                width: 100px;
+            }
+        
+            .card-number{
+                grid-area: card-number;
+                font-size: 30px;
+                padding: 40px 15px;
+                border-right: solid yellow 4px;
+                border-bottom: solid yellow 4px;
+                background-color: whitesmoke;
+                color: black;
+                font-weight: 700;
+                margin: 5px;
+            }
+        
+            .tell--things{
+                grid-area: tell-things;
+                padding-top: 120px;
+                padding-left: 15px;
+                text-align: end;
+                font-size: 25px;
+                height: 90px;
+                width: 280px;
+            }
+        }
+    
+
+        .about2--container{
+            grid-area: about2-container;
+            display: grid;
+            grid-template-areas:"tell-p tell-things"
+                                "card-number tell-things"
+                                "card-number tell-things"
+                                "made-by tell-things";
+        
+            background-color: black;
+            color: yellow;
+            border: solid 5px;
+            width: 575px;
+            height: 350px;
+            grid-template-columns: 45% 52%;
+            grid-template-rows: 1fr 1fr 2fr 2fr;
+        
+            .tell-p{
+                font-size: 35px;
+                padding: 20px 10px 0px 15px;
+                grid-area: tell-p;
+                border-bottom: solid 2px;
+                width: 400px;
+                height: 70px; 
+            }
+        
+            .made-by{
+                margin-top: 20px;
+                grid-area: made-by;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-left: 15px;
+                height: 20px;
+                width: 100px;
+            }
+        
+            .card-number{
+                grid-area: card-number;
+                font-size: 30px;
+                padding: 40px 15px;
+                border-right: solid yellow 4px;
+                border-bottom: solid yellow 4px;
+                background-color: whitesmoke;
+                color: black;
+                font-weight: 700;
+                margin: 5px;
+            }
+        
+            .tell--things{
+                grid-area: tell-things;
+                padding-top: 120px;
+                padding-left: 15px;
+                text-align: end;
+                font-size: 25px;
+                height: 90px;
+                width: 280px;
+            }
+        }
+    }
+}
+
+
