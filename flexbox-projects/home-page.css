@@ -1,18 +1,24 @@
-.header--container{
-    
-}
-
-.body--container{
-
-    .main--container{
-
+.container{
+    display: grid;
+    grid-template-areas:"header header header header header header"
+                        "sider sider main main main main"
+                        "sider sider main main main main";
+    .header--container{
+        display: flex;
     }
 
-    .sidebar--container{
+    .body--container{
+
+        .main--container{
+
+        }
+
+        .sidebar--container{
+
+        }
+    }
+
+    .footer{
 
     }
-}
-
-.footer{
-    
 }
